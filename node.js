@@ -12,6 +12,9 @@ router.get('/about', (req, res) => {
     res.send(`<h1>我是about</h1>`)
 })
 
+router.get() // 我还在开发这个功能模块，不能上线
+            // 目前这个模块还得继续修改才能上线
+
 
 app.use(router)
 app.listen(3000)
