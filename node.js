@@ -18,7 +18,7 @@ router.post('/login', (req, res) => {
         res.send('登录成功')
     }
     else {
-        res.send('用户名密码不正确')
+        res.send('用户名密码不正确，请检查您的输入是否正确')
     }
 
 })
