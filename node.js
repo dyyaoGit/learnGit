@@ -15,7 +15,7 @@ router.get('/about', (req, res) => {
 router.post('/login', (req, res) => {
     const {username, pwd} = req.body
     if(username === 'dyyao'&&pwd === '123') {
-        res.send('登录成功')
+        res.send('master登录成功了')
     }
     else {
         res.send('用户名密码不正确，请检查您的输入是否正确')
