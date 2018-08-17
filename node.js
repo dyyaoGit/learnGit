@@ -7,6 +7,10 @@ router.get('/', (req, res) => {
     res.send(`<h1>我是首页</h1>`)
 })
 
+router.get('/about', (req, res) => {
+    const {username} = req.query
+    res.send(`<h1>我是about</h1>`)
+})
 
 
 app.use(router)
