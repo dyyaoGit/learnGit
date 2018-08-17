@@ -12,8 +12,16 @@ router.get('/about', (req, res) => {
     res.send(`<h1>我是about</h1>`)
 })
 
-router.get() // 我还在开发这个功能模块，不能上线
-            // 目前这个模块还得继续修改才能上线
+router.post('/login', (req, res) => {
+    const {username, pwd} = req.body
+    if(username === 'dyyao'&&pwd === '123') {
+        res.send('登录成功')
+    }
+    else {
+        res.send('用户名密码不正确')
+    }
+
+})
 
 
 app.use(router)
